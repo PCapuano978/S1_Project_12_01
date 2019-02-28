@@ -19,6 +19,12 @@
     <link href="tc_reset.css" rel="stylesheet" />
     <link href="tc_styles.css" rel="stylesheet" />
 
+    <!-- Both JavaScript files are linked to the HTML here to apply their effects and are given the "defer" attribute to make sure the HTML page has fully loaded first before applying HTML. -->
+
+    <script src="tc_order.js" defer></script>
+    <script src="tc_cart.js" defer></script>
+
+
 </head>
 
 <body>
@@ -47,6 +53,8 @@
 
     <section>
         <h1>Shopping Cart</h1>
+
+        <!-- Not an added in piece by myself, but it is worth mentioning that this "cart" ID is very important for targetting within the JavaScript to add all of the HTML code within these two div tags. -->
 
         <div id="cart"></div>
 
@@ -87,8 +95,6 @@
         <p>Trophy Case Sports &copy; 2018 All Rights Reserved</p>
     </footer>
 
-    <script src="tc_order.js" defer></script>
-    <script src="tc_cart.js" defer></script>
 
 </body>
 
